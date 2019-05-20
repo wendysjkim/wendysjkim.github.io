@@ -1,11 +1,11 @@
 # Site settings
 author: Wendy Kim
-title: Wendy's Blog
+title: Data Science
 header-img: img/home-bg.png
 email: wendysjkim@gmail.com
 copyright_name: Wendy Kim
 description: > # this means to ignore newlines until "baseurl:"
-  Data Science
+  Wendy's Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  wendysjkim
