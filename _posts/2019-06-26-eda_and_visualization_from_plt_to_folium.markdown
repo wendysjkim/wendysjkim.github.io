@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "EDA and Visualization, from plt to folium"
-date:       2019-06-26 23:31:41 +0000
+date:       2019-06-26 19:31:42 -0400
 permalink:  eda_and_visualization_from_plt_to_folium
 ---
 
