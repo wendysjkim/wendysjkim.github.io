@@ -60,7 +60,7 @@ plt.ylabel(dict['sqft_living15'], fontsize=13)
 plt.show()
 ```
 
-![](https://imgur.com/5pqnQqR.png)
+![](https://imgur.com/qN4mV0t.png)
 
 It seems like people who live in bigger houses tend to live with others who also live in bigger houses. The scatter plot shows that square footage of living space in a house is positively correlated with square footage of living spaces in nearest 15 neighborhood. However, the plot didn't give me more insightful information.
 
@@ -77,7 +77,7 @@ plt.ylabel(dict['bathrooms'], fontsize=13)
 plt.show()
 ```
 
-![](https://imgur.com/DOXZRwv.png)
+![](https://imgur.com/3ZtskUT.png)
 
 Interestingly enough, as the number of bedrooms increases, the median number of bathrooms does not increase as much. In other words, although houses with more bedrooms are more likely to have more bathrooms, houses have equal or less number of bathrooms than bedrooms on average.
 
@@ -103,7 +103,7 @@ plt.ylabel(dict['sqft_living'], fontsize=13)
 plt.show()
 ```
 
-![](https://imgur.com/eMcqgTK.png)
+![](https://imgur.com/3EDeDRO.png)
 
 It is not surprising that square footage of living space and housing prices have strong positive correlation, as shown in the subplot on the left. Yet, the relationship between the square footage of living space and total number of floors in the house is pretty interesting. The boxplot on the right shows that having higher number of floors doesn't necessarily mean the house has bigger living space. In fact, the median square footage of living space does not vary much by the number of floors in the house.
 
@@ -137,7 +137,7 @@ plt.colorbar(orientation="horizontal")
 plt.show()
 ```
 
-![](https://imgur.com/dtv3tGP.png)
+![](https://imgur.com/bUO9uWg.png)
 
 It looks like geographical location plays a significant impact on the housing prices in King County. The subplot on the left shows housing prices based on the longitude and latitude of each houses. The subplot on the right shows whether these houses have waterfront view or not. Not surprisingly, houses with waterfront view tend to be in the area where prices are higher.
 
@@ -153,7 +153,7 @@ plt.ylabel(dict['price'], fontsize=13)
 plt.show()
 ```
 
-![](https://imgur.com/EE1yfb4.png)
+![](https://imgur.com/icJiiG2.png)
 
 It would be much cooler if I could see these data points on an actual map. I learned that the folium library makes this task very easy.
 
