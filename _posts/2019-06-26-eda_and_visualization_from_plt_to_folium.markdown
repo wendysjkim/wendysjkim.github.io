@@ -105,7 +105,7 @@ plt.show()
 
 ![](https://imgur.com/3EDeDRO.png)
 
-It is not surprising that square footage of living space and housing prices have strong positive correlation, as shown in the subplot on the left. Yet, the relationship between the square footage of living space and total number of floors in the house is pretty interesting. The boxplot on the right shows that having higher number of floors doesn't necessarily mean the house has bigger living space. In fact, the median square footage of living space does not vary much by the number of floors in the house.
+It is not surprising that square footage of living space and housing prices have some positive correlation, as shown in the subplot on the left. Yet, the relationship between the square footage of living space and total number of floors in the house is pretty interesting. The boxplot on the right shows that having higher number of floors doesn't necessarily mean the house has bigger living space. In fact, the median square footage of living space does not vary much by the number of floors in the house.
 
 #### Geographical Location
 
