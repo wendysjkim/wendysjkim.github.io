@@ -20,7 +20,7 @@ Also, I created a dictionary of column names and descriptions, which expediated 
 
 ```
 # Create dictionary of column descriptions
-dict = {'id': 'ID',
+labels = {'id': 'ID',
        'date': 'Date Sold',
        'price': 'Price',
        'bedrooms': 'Number of Bedrooms',
@@ -55,8 +55,8 @@ plt.scatter(x=df['sqft_living'], y=df['sqft_living15'], alpha=0.5, label='Square
 
 plt.legend()
 plt.title('Square Footage of Houses in Nearby Neighborhoods', fontsize=15)
-plt.xlabel(dict['sqft_living'], fontsize=13)
-plt.ylabel(dict['sqft_living15'], fontsize=13)
+plt.xlabel(labels['sqft_living'], fontsize=13)
+plt.ylabel(labels['sqft_living15'], fontsize=13)
 plt.show()
 ```
 
@@ -72,8 +72,8 @@ I decided to look into distributions of certain variables by grouping them. For 
 df.boxplot(column='bathrooms', by ='bedrooms')
 plt.suptitle('')
 plt.title('Distribution of Number of Bathrooms by Number of Bedrooms', fontsize=15)
-plt.xlabel(dict['bedrooms'], fontsize=13)
-plt.ylabel(dict['bathrooms'], fontsize=13)
+plt.xlabel(labels['bedrooms'], fontsize=13)
+plt.ylabel(labels['bathrooms'], fontsize=13)
 plt.show()
 ```
 
@@ -90,15 +90,15 @@ fig, ax = plt.subplots(ncols = 2, nrows = 1, figsize = (20,8))
 ax1 = plt.subplot(1, 2, 1)
 plt.scatter(x=df['sqft_living'], y=df['price'], alpha=0.5)
 plt.title('Square Footage of Houses and The Prices', fontsize=15)
-plt.xlabel(dict['sqft_living'], fontsize=13)
-plt.ylabel(dict['price'], fontsize=13)
+plt.xlabel(labels['sqft_living'], fontsize=13)
+plt.ylabel(labels['price'], fontsize=13)
 
 # sqft_living vs. floors
 ax2 = plt.subplot(1, 2, 2)
 sns.boxplot(x='floors', y='sqft_living', data=df)
 plt.title('Distribution of Living Space by Total Number of Floors', fontsize=15)
-plt.xlabel(dict['floors'], fontsize=13)
-plt.ylabel(dict['sqft_living'], fontsize=13)
+plt.xlabel(labels['floors'], fontsize=13)
+plt.ylabel(labels['sqft_living'], fontsize=13)
 
 plt.show()
 ```
@@ -148,8 +148,8 @@ plt.figure(figsize=(8,6))
 sns.violinplot(y='price', x ='waterfront', data=df)
 
 plt.title('Distribution of Housing Prices by Waterfront View', fontsize=15)
-plt.xlabel(dict['waterfront'], fontsize=13)
-plt.ylabel(dict['price'], fontsize=13)
+plt.xlabel(labels['waterfront'], fontsize=13)
+plt.ylabel(labels['price'], fontsize=13)
 plt.show()
 ```
 
