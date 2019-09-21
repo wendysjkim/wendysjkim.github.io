@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Improving Profitability: Using Monte Carlo Simulation"
-date:       2019-09-21 06:44:56 +0000
+date:       2019-09-21 02:44:57 -0400
 permalink:  improving_profitability_using_monte_carlo_simulation
 ---
 
@@ -231,8 +231,8 @@ The results look interesting, but there were too many comparisons to see the big
 ```
 # monte carlo results (sample 1 > sample 2)
 plt.figure(figsize=(4,3.5))
-group1 = results_df.loc[results_df_4m['Conclusion'] == 'Rejected']
-group2 = results_df.loc[results_df_4m['Conclusion'] == 'Failed to Reject']
+group1 = results_df.loc[results_df['Conclusion'] == 'Rejected']
+group2 = results_df.loc[results_df['Conclusion'] == 'Failed to Reject']
 
 plt.scatter('Group_1_Num', 'Group_2_Num', data=group1, marker='s', color='turquoise', s=300, label='Rejected')
 plt.scatter('Group_1_Num', 'Group_2_Num', data=group2, marker='x', color='green', s=25, label='Failed to Reject')
