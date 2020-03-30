@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Insights into the Manhattan Restaurant Landscape"
-date:       2020-03-30 19:44:57 +0000
+date:       2020-03-30 15:44:58 -0400
 permalink:  insights_into_the_manhattan_restaurant_landscape
 ---
 
